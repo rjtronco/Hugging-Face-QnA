@@ -8,4 +8,4 @@ Please see `local_testing_result.png` for a screenshot of local testing
 Web app template was downloaded from the internet
 
 # Transcriber
-Still WIP, need to upgrade subscription for live transcription
+Still WIP, need to upgrade subscription for live transcription. Please see images for local testing result
