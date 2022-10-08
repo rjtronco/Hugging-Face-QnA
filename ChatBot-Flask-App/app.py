@@ -2,7 +2,7 @@ import flask
 import json
 import os
 from flask import send_from_directory, request
-
+import random
 
 # Flask app should start in global layout
 app = flask.Flask(__name__)
@@ -20,15 +20,28 @@ def home():
 @app.route('/webhook', methods=['POST'])
 def webhook():
     query = request.get_json(force=True)
+    print("Reached!")
+    sample_return_messages = {
+        "bye":['bye ka rin!','k bye!'],
+        "supot":["supot ka ba?","baka ikaw supot?","kausap ko supot. haha"],
+        "mama":["your mom!","mama mo"],
+        "ha":["hakdog","hakdog ka"]
+    }
 
     queryText = str(query['queryResult']['queryText'])
     print(queryText)
     print("haha")
 
-    if "bye" in queryText:
-        return {
-        'fulfillmentText': 'Bye ka rin!'
-    }
+    if "supot" in str(queryText) or "ha" in str(queryText) or "mama" in str(queryText) or "bye" in str(queryText):
+        if queryText in sample_return_messages:
+            # randomize from list what to return
+            rand_index = random.randint(0,len(sample_return_messages[queryText])-1)
+            message = sample_return_messages[queryText][rand_index]
+            print(message)
+            return {
+                'fulfillmentText': message
+            }
+
 
     return {
         'fulfillmentText': 'Hello from the bot world supot!'
