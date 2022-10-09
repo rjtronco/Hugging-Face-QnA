@@ -29,15 +29,14 @@ def webhook():
     }
 
     queryText = str(query['queryResult']['queryText'])
-    print(queryText)
-    print("haha")
 
-    if "supot" in str(queryText) or "ha" in str(queryText) or "mama" in str(queryText) or "bye" in str(queryText):
-        if queryText in sample_return_messages:
+    explode_str = queryText.split(" ")
+
+    for i in explode_str:
+        if i in sample_return_messages:
             # randomize from list what to return
-            rand_index = random.randint(0,len(sample_return_messages[queryText])-1)
-            message = sample_return_messages[queryText][rand_index]
-            print(message)
+            rand_index = random.randint(0,len(sample_return_messages[i])-1)
+            message = sample_return_messages[i][rand_index]
             return {
                 'fulfillmentText': message
             }
