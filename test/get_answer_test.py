@@ -11,7 +11,7 @@ json_data = {
 }
 
 response = requests.post(
-  'http://0.0.0.0:8000/get_answer',
+  'http://13.229.63.24/get_answer',
   json=json_data
 )
 
