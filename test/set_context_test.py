@@ -26,7 +26,7 @@ json_data = {
 }
 
 response = requests.post(
-  'http://13.229.63.24/set_context',
+  'http://18.138.109.43/set_context',
   json=json_data
 )
 
