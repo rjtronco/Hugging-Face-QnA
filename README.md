@@ -48,4 +48,4 @@ Komunicate app id: `https://widget.kommunicate.io/chat?appId=201b88b52948f69ac0c
 
 # Transcriber
 Go to `/Speech-to-Text` directory. Run `working_rts.py` in cli, then speak to your mic
-`CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib" python3 -m pip install pyaudio` to install on mac
+Note: `CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib" python3 -m pip install pyaudio` to install on mac
