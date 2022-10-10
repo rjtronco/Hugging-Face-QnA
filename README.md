@@ -47,5 +47,5 @@ Komunicate app id: `https://widget.kommunicate.io/chat?appId=201b88b52948f69ac0c
   - Use the test files to check if your endpoints work correctly
 
 # Transcriber
-Run `working_rts.py` in cli, then speak to your mic
+Go to `/Speech-to-Text` directory. Run `working_rts.py` in cli, then speak to your mic
 `CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib" python3 -m pip install pyaudio` to install on mac
