@@ -12,7 +12,7 @@ Please see `local_testing_result.png` for a screenshot of local testing
   - Install **nginx** to your instance
   - Copy/Pull your files from your local/Github (FastAPI application files, Dockerfile, docker-compose.yaml)
       - Run `sudo docker-compose up -d` to run the on background
-  - Setup the nginx config file in `etc/nginx/sites-enabled/` directory
+  - Create the nginx config file in `etc/nginx/sites-enabled/` directory
       - ``` server {
             listen 80;
             server_name <Elastic IP Assigned to your Instance>;
