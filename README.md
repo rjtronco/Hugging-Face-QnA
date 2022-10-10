@@ -30,7 +30,7 @@ You can run `set_context.py` then `get_answer.py` to test endpoints
 
 
 # Chatbot
-Web app template was downloaded from the internet
+Frontend for chat app: `http://resty-chatbot.com.s3-website-ap-southeast-1.amazonaws.com/`
 
 # Transcriber
 Still WIP, need to upgrade subscription for live transcription. Please see images for local testing result
