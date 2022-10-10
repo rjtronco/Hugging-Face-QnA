@@ -13,3 +13,4 @@ Web app template was downloaded from the internet
 
 # Transcriber
 Still WIP, need to upgrade subscription for live transcription. Please see images for local testing result
+`CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib" python3 -m pip install pyaudio` to install on mac
