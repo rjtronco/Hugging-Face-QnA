@@ -1,0 +1,13 @@
+service: "model_service:svc"  # <model_service_filename>:<svc_variable>
+labels:
+    owner: resty
+    stage: dev
+include:
+- "paraphrase-MiniLM-L6-v2/"
+- "*.py"
+python:
+    packages:  # Additional pip packages required by the service
+    - torch
+    - transformers
+docker:
+  env: "dev" # path to the environment file (e.g. secrets, credentials)
