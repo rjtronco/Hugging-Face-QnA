@@ -45,7 +45,7 @@ URL: `http://18.138.109.43/`
 
 ### Deploying using BentoML
   - install BentoML=>1.0.5, torch, and transformers
-  - make to have docker running
+  - make sure to have docker/docker-desktop running
   - run `bentoml build -f bentofile.yaml`
   - run `bentoml containerize <svc_name>:<tag>`
   - then to host endpoint, run `docker run -it --rm -p 3000:3000 <svc_name>:<tag>`
