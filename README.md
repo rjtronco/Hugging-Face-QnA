@@ -9,13 +9,13 @@ Reference: https://towardsdatascience.com/build-a-q-a-app-with-pytorch-cb599480e
 - Creating API endpoint using FastAPI
 - Building and containerizing model using Docker
 
-🍭 Deploying the QA model in AWS EC2
+🍭 [Deploying the QA model in AWS EC2](https://github.com/rjtronco/Hugging-Face-QnA/blob/main/EC2_Deployment.md)
 - Setting up EC2 instance
 - Deploying the model inside the instance
 - Configuring the instance to enable access to the model endpoints
 
 
-🍭 Building the QA using BentoML framework
+🍭 [Building the QA using BentoML framework](https://github.com/rjtronco/Hugging-Face-QnA/new/main/QnA_BentoML) 
 - Make use of a templated BentoMLv1 model service file
 - Building and containerizing bento model using bentoml
 - Expose bentoml model endpoints to be accesible
@@ -65,11 +65,15 @@ RUN apt-get update &&\
 
 # adds the script defining the QA model to docker
 COPY download_model.sh .
+```
 
 # Build and run your model
+
+```bash
 docker build . -t qamodel &&\
   docker run -p 8000:8000 qamodel
 ```
+
 
 ### TESTING
   - go to the `/test` directory
@@ -90,19 +94,7 @@ docker build . -t qamodel &&\
 
 
 
-### TESTING
-  - go to the `/test` directory
-  - You can run `set_context.py` then `get_answer.py` to test endpoints
-  - Locust load test
-      - run `pip install locust`
-      - for testing in *WEB UI*
-        - Run `locust` inside the directory where the `locustfile.py` is located
-        - Open your browser and go to [http://127.0.0.1:8089](http://127.0.0.1:8089/) to access the GUI
-        - Begin load testing
-        - Test for N users at X users spawned per second
-        - Run the test for 5 minutes
-     - for *Headless* testing
-        - run `locust -f <locust_file_name>.py --config <config_file_name>.conf`
+
 
 
 
