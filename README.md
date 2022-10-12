@@ -20,7 +20,7 @@ Reference: https://towardsdatascience.com/build-a-q-a-app-with-pytorch-cb599480e
 - Building and containerizing bento model using bentoml
 - Expose bentoml model endpoints to be accesible
 
-🍭 [Load test endpoints using Locust Testing](https://github.com/rjtronco/Hugging-Face-QnA/blob/main/test/Locust%20Testing.mdL) 
+🍭 [Load test endpoints using Locust Testing](https://github.com/rjtronco/Hugging-Face-QnA/blob/main/test/Locust%20Testing.md) 
 - Create locust testing file
 - Use locust testing in a WebUI and/or cli
 - Assess model performance during heavy network traffic
