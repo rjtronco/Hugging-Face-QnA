@@ -20,6 +20,11 @@ Reference: https://towardsdatascience.com/build-a-q-a-app-with-pytorch-cb599480e
 - Building and containerizing bento model using bentoml
 - Expose bentoml model endpoints to be accesible
 
+🍭 [Load test endpoints using Locust Testing](https://github.com/rjtronco/Hugging-Face-QnA/blob/main/test/Locust%20Testing.mdL) 
+- Create locust testing file
+- Use locust testing in a WebUI and/or cli
+- Assess model performance during heavy network traffic
+
 
 ## How it works
 
@@ -88,38 +93,4 @@ docker build . -t qamodel &&\
 <br>
 
 
-### Supplementary links
-- [Deploying model to EC2](https://github.com/rjtronco/Hugging-Face-QnA/blob/main/EC2_Deployment.md)
-- Building Model using BentoML v1
 
-
-
-
-
-
-
-### Deploying using BentoML
-  - install BentoML=>1.0.5, torch, and transformers
-  - make sure to have docker/docker-desktop running
-  - run `bentoml build -f bentofile.yaml`
-  - run `bentoml containerize <svc_name>:<tag>`
-  - then to host endpoint, run `docker run -it --rm -p 3000:3000 <svc_name>:<tag>`
-      - `docker run -it --rm -p 3000:3000 qna_service:sxmg4ycjdsc6ehua`
-   
-#### NOTE:
-  - You can reach the model using `/predict` endpoint. Flag value differentiate in setting context and getting answers
-  - Setting Context: 
-  - ``` json_data = {
-            'flag':'set_context',
-            'data':{
-              'questions':questions,
-              'answers':answers
-            }
-          }
-  - Getting answers
-  - ``` json_data = {
-            'flag':'predict',
-            'data':{
-              'questions':questions,
-            }
-          }
