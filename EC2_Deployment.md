@@ -1,5 +1,7 @@
 ## EC2 Hosted endpoint
 
+Reference: https://dev.to/theinfosecguy/how-to-deploy-a-fastapi-application-using-docker-on-aws-4m61
+
 ### Deployment steps
   - Spin up an instance. For this one, we used `ubuntu`
   - Setup **ElasticIP** for your instance. 
