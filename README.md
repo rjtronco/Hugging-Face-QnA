@@ -89,7 +89,7 @@ docker build . -t qamodel &&\
     
 #### Local test result:
 
-[<img src="https://github.com/rjtronco/Hugging-Face-QnA/blob/main/local_testing_result.png" width="800px" margin-left="-5px">]
+<img src="https://github.com/rjtronco/Hugging-Face-QnA/blob/main/local_testing_result.png" width="800px" margin-left="-5px">
 <br>
 
 
