@@ -65,6 +65,4 @@ You can run `set_context.py` then `get_answer.py` to test endpoints
   - run your flask app and ngrok
   - Use the test files to check if your endpoints work correctly
 
-# Transcriber
-Go to `/Speech-to-Text` directory. Run `working_rts.py` in cli, then speak to your mic
-Note: `CFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib" python3 -m pip install pyaudio` to install on mac
+
