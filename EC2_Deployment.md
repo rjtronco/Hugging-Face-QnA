@@ -1,7 +1,9 @@
-### EC2 Hosted endpoint
-#### Deployment steps
+## EC2 Hosted endpoint
+
+### Deployment steps
   - Spin up an instance. For this one, we used `ubuntu`
   - Setup **ElasticIP** for your instance. 
+  - Configure your instance's security group to accept  all `http` and `https` request (this is not the best practice, but for the sake of demo, this will do)
   - SSH into your EC2 instance
   - Install **docker** to your instance (docker,docker-compose )
   - Install **nginx** to your instance
@@ -17,7 +19,6 @@
         }
       - Run `sudo service nginx restart`
   - Try accessing your app via `http://<elastic-ip>/`
-
 
 
 URL: `http://18.138.109.43/`
