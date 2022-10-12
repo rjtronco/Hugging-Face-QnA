@@ -6,7 +6,7 @@
   - Install **docker** to your instance (docker,docker-compose )
   - Install **nginx** to your instance
   - Copy/Pull your files from your local/Github (FastAPI application files, Dockerfile, docker-compose.yaml)
-      - Run `sudo docker-compose up -d` to run the on background
+      - Run `sudo docker-compose up -d`. The `-d` flag will run the docker compose on the background
   - Create the nginx config file in `etc/nginx/sites-enabled/` directory
       - ``` server {
             listen 80;
