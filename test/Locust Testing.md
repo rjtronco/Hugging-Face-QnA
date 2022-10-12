@@ -1,1 +1,13 @@
-test
+# Locust TESTING
+  - go to the `/test` directory
+  - You can run `set_context.py` then `get_answer.py` to test endpoints
+  - Locust load test
+      - run `pip install locust`
+      - for testing in *WEB UI*
+        - Run `locust` inside the directory where the `locustfile.py` is located
+        - Open your browser and go to [http://127.0.0.1:8089](http://127.0.0.1:8089/) to access the GUI
+        - Begin load testing
+        - Test for N users at X users spawned per second
+        - Run the test for 5 minutes
+     - for *Headless* testing
+        - run `locust -f <locust_file_name>.py --config <config_file_name>.conf`
