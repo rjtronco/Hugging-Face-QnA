@@ -53,8 +53,3 @@ You can run `set_context.py` then `get_answer.py` to test endpoints
               'questions':questions,
             }
           }
-
-
-
-
-
