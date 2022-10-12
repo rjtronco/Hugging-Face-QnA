@@ -1,4 +1,0 @@
-PyAudio
-six==1.11.0
-websocket-client==0.53.0
-websocket==0.2.1
