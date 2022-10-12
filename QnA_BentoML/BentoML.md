@@ -1,5 +1,9 @@
 # Deploying using BentoML
   - install BentoML=>1.0.5, torch, and transformers
+  - create the `model_service.py` file 
+  - create the bentofile.yaml
+
+## Testing
   - make sure to have docker/docker-desktop running
   - run `bentoml build -f bentofile.yaml`
   - run `bentoml containerize <svc_name>:<tag>`
