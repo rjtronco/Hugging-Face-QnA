@@ -8,7 +8,7 @@
    
 #### NOTE:
   - You can reach the model using `/predict` endpoint. Flag value differentiate in setting context and getting answers
-  - Setting Context: 
+  - Setting Context json payload: 
   - ``` json_data = {
             'flag':'set_context',
             'data':{
@@ -16,7 +16,7 @@
               'answers':answers
             }
           }
-  - Getting answers
+  - Getting answers json payload:
   - ``` json_data = {
             'flag':'predict',
             'data':{
